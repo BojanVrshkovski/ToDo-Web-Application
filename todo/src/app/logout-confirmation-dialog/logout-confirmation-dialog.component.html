@@ -1,0 +1,14 @@
+<div class="bootstrap-modal-wrapper">
+    <div class="bootstrap-modal-content">
+      <div class="bootstrap-modal-header">
+        <h5 class="bootstrap-modal-title">Confirm Logout</h5>
+      </div>
+      <div class="bootstrap-modal-body">
+        Are you sure you want to logout ?
+      </div>
+      <div class="bootstrap-modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="onNoClick()">Cancel</button>
+        <button type="button" [mat-dialog-close]="true" class="btn btn-danger ml-2">Ok</button>
+      </div>
+    </div>
+  </div>

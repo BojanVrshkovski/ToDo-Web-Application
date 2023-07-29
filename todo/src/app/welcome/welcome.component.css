@@ -1,0 +1,96 @@
+/* welcome.component.scss (or welcome.component.css) */
+
+.alert.fade-in {
+    animation: fadeIn 0.5s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .btn-success {
+    margin-top: 1rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 13vh; /* Make the container take up the full viewport height */
+  }
+  
+  /* Styling for the welcome heading */
+  .welcome-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    animation: fadeInDown 1s; /* Apply the fadeInDown animation to the heading */
+  }
+  
+  /* Animation keyframes for the fadeInDown effect */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }  
+
+
+  /* welcome.component.scss (or welcome.component.css) */
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .welcome-heading {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    animation: fadeInDown 1s;
+  }
+  
+  .welcome-message {
+    text-align: center;
+  }
+  
+  .user-name {
+    font-weight: bold;
+    color: #007bff; /* Set the color to blue (adjust as needed) */
+  }
+  
+  .manage-todos-link {
+    color: #007bff;
+    text-decoration: underline;
+    margin-left: 0.5rem; /* Add a small space between the user name and the link */
+  }
+  
+  /* Animation keyframes for the fadeInDown effect (same as before) */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
