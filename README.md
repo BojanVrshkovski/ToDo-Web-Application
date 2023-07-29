@@ -1,63 +1,48 @@
-#Todo Web Application
+# Todo Web Application
 
 This is a simple Todo Web Application built using Java Spring for the backend and Angular for the frontend. The application allows users to manage their todo tasks, including adding, updating, and deleting tasks. The data is stored in an H2 in-memory database.
-#Prerequisites
+
+## Prerequisites
 
 Before running the application, make sure you have the following installed:
 
-    Java Development Kit (JDK) 8 or higher
-    Node.js and npm (Node Package Manager)
-    Angular CLI (Command Line Interface)
-    Git
+- Java Development Kit (JDK) 8 or higher
+- Node.js and npm (Node Package Manager)
+- Angular CLI (Command Line Interface)
+- Git
 
-#Getting Started
-#Backend
+## Getting Started
 
-    Clone the repository to your local machine:
+### Backend
 
-bash
+1. Clone the repository to your local machine:
 
+```bash
 git clone https://github.com/BojanVrshkovski/todo-web-app.git
+```
+2. Open the backend project in your preferred Java IDE (e.g., IntelliJ, Eclipse).
 
-    Open the backend project in your preferred Java IDE (e.g., IntelliJ, Eclipse).
+3. Build and run the Spring Boot application. The backend will be accessible at `http://localhost:8080`.
 
-    Build and run the Spring Boot application. The backend will be accessible at http://localhost:8080.
+### Frontend
 
-#Frontend
+1. Navigate to the frontend directory of the project: `cd todo-web-app/todo`
+2. Install the required dependencies: `npm install`
+3. Start the Angular development server: `ng serve`
+The frontend will be accessible at `http://localhost:4200`.
 
-    Navigate to the frontend directory of the project:
+## Features
 
-bash
+- User Authentication: The application supports user authentication using JSON Web Tokens (JWT). Users can log in and log out securely.
 
-cd todo-web-app/todo
+- Todo Management: Authenticated users can view, add, update, and delete their todo tasks. Each task includes a description, a target date, and a status (completed or not).
 
-    Install the required dependencies:
+- Database: The application uses an H2 in-memory database, which means the data is not persistent and will be reset each time the application is restarted.
 
-bash
-
-npm install
-
-    Start the Angular development server:
-
-bash
-
-ng serve
-
-The frontend will be accessible at http://localhost:4200.
-#Features
-
-    User Authentication: The application supports user authentication with a basic hardcoded authentication service. Users can log in and log out.
-
-    Todo Management: Authenticated users can view, add, update, and delete their todo tasks. Each task includes a description, a target date, and a status (completed or not).
-
-    Database: The application uses an H2 in-memory database, which means the data is not persistent and will be reset each time the application is restarted.
-
-#Directory Structure
+## Directory Structure
 
 The project is structured as follows:
-
-css
-
+<pre>
 todo-web-app/
   ├── backend/
   │   ├── src/
@@ -88,22 +73,25 @@ todo-web-app/
   │   ├── package.json
   │   └── ...
   └── README.md
+</pre>
 
-#Future Improvements
 
-    Persist Data: Integrate a persistent database (e.g., MySQL, PostgreSQL) to store todo tasks permanently.
+## Future Improvements
 
-    User Registration: Implement user registration to allow new users to sign up.
+- Persist Data: Integrate a persistent database (e.g., MySQL, PostgreSQL) to store todo tasks permanently.
 
-    Task Categories: Add support for categorizing tasks, allowing users to group tasks under different categories or projects.
+- User Registration: Implement user registration to allow new users to sign up.
 
-    Task Prioritization: Add priority levels to tasks to help users prioritize their work.
+- Task Categories: Add support for categorizing tasks, allowing users to group tasks under different categories or projects.
 
-    Task Filtering and Sorting: Implement filtering and sorting options for tasks based on different criteria (e.g., due date, status).
+- Task Prioritization: Add priority levels to tasks to help users prioritize their work.
 
-#License
+- Task Filtering and Sorting: Implement filtering and sorting options for tasks based on different criteria (e.g., due date, status).
+
+## License
 
 This project is licensed under the BV License.
-#Acknowledgments
+
+## Acknowledgments
 
 Thank you for using this Todo Web Application. Feedback and contributions are welcome!
