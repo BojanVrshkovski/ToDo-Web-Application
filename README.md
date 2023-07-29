@@ -18,7 +18,7 @@ Before running the application, make sure you have the following installed:
 1. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/BojanVrshkovski/todo-web-app.git
+https://github.com/BojanVrshkovski/ToDo-Web-Application.git
 ```
 2. Open the backend project in your preferred Java IDE (e.g., IntelliJ, Eclipse).
 
@@ -44,21 +44,22 @@ The frontend will be accessible at `http://localhost:4200`.
 The project is structured as follows:
 <pre>
 todo-web-app/
-  ├── backend/
+  ├── restful-web-services/
   │   ├── src/
   │   │   └── main/
   │   │       ├── java/
-  │   │       │   └── com.example.todo/
-  │   │       │       ├── config/
-  │   │       │       ├── controller/
-  │   │       │       ├── model/
-  │   │       │       ├── repository/
-  │   │       │       ├── service/
+  │   │       │   └── com.bojan.res/webservices/restfulwebservices/
+  │   │       │       ├── jwt/
+  │   │       │       ├── todo/
+  |   |       |       |   |   ├── controller/
+  |   |       |       |   |   ├── exceptions/
+  |   |       |       |   |   ├── model/
+  |   |       |       |   |   ├── repository/
+  |   |       |       |   |   ├── service/
   │   │       │       └── TodoWebApplication.java
   │   │       └── resources/
   │   │           ├── application.properties
-  │   │           ├── data.sql
-  │   │           └── schema.sql
+  │   │           
   │   └── pom.xml
   ├── frontend/
   │   ├── e2e/
